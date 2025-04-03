@@ -3,66 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innosmarttech</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        function toggleMenu() {
-            document.getElementById("nav-menu").classList.toggle("show");
-        }
-    </script>
+    <title>Innosmarttech LLC</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
         }
         header {
             display: flex;
             align-items: center;
             justify-content: space-between;
             background-color: #f4f8f4;
-            padding: 1px 2px;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .logo img {
-            max-height: 75px;
-        }
-        nav {
-            flex-grow: 1;
-            text-align: right;
+            max-height: 80px;
         }
         nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: flex-end; /* Aligns the menu items to the right */
         }
         nav ul li {
-            margin: 15px; /* Adds spacing between menu items */
+            margin: 0 15px;
         }
         nav ul li a {
-            color: #333;
             text-decoration: none;
+            color: #333;
             font-weight: bold;
         }
         nav ul li a:hover {
-            color: #007BFF; /* Optional: Add hover effect */
+            color: #007BFF;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .hero button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .hero button:hover {
+            background-color: #0056b3;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .service {
+            flex: 1 1 300px;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .service h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .service p {
+            font-size: 1rem;
+        }
+        footer {
+            background-color: #f4f8f4;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+        }
+        footer a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            color: #007BFF;
         }
     </style>
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="ist_cropped.jpeg" alt="Innosmarttech Logo">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="ist_cropped.jpeg" alt="Innosmarttech Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to Innosmarttech LLC</h1>
+        <p>Innovative Solutions for a Smarter Tomorrow</p>
+        <button onclick="location.href='about.html'">Learn More</button>
+    </div>
+
+    <section class="section">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Custom Software Development</h3>
+                <p>We build tailored software solutions to meet your business needs.</p>
             </div>
-            <nav>
-                <ul id="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="services.html">Services</a></li>
-                </ul>
-            </nav>
-        </header>
-    </body>
-    </html>
+            <div class="service">
+                <h3>Cloud Solutions</h3>
+                <p>Leverage the power of the cloud to scale your business efficiently.</p>
+            </div>
+            <div class="service">
+                <h3>AI & Machine Learning</h3>
+                <p>Integrate AI-driven insights to stay ahead in the competitive market.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: #f9f9f9;">
+        <h2>About Us</h2>
+        <p>At Innosmarttech LLC, we are committed to delivering cutting-edge technology solutions that empower businesses to thrive in a digital world. Our team of experts specializes in software development, cloud computing, and AI-driven innovations.</p>
+    </section>
+
+    <footer>
+        <div>
+            <p><strong>Contact Us:</strong> info@innosmarttech.com | +1 (123) 456-7890</p>
+        </div>
+        <div style="margin: 10px 0;">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+        <div>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+        </div>
+        <div style="margin-top: 10px;">
+            <p>&copy; 2025 Innosmarttech LLC. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
